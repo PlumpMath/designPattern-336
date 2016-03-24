@@ -18,6 +18,14 @@ import com.code.design.command.ReadFileCommand;
 public class DesignClient {
     
     public static void main(String[] args) {
+        testCommandPattern();
+    }
+
+    
+    /**
+     * Command pattern: use unified interface to accept command as parameter to execute different logic
+     */
+    private static void testCommandPattern() {
         // test command pattern
         FileSystemReceiverUtil receiverUtil = new FileSystemReceiverUtil();
         FileSystemReceiver receiver = receiverUtil.getFileSystemReceiver();
